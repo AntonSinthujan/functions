@@ -5,7 +5,7 @@ object Q4 extends App {
     def accCreate(nic:String, accId: Int):Unit = {
         val acc = new Accounts(nic, accId)
         accountList = accountList ::: acc :: Nil
-        println(accountList)
+        println(accountList)  
     }
 
     val find = (a:Int, b:List[Accounts]) => b.filter(account => account.accId.equals(a))
